@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg width="{{width}}" height="{{height}}" viewBox="0 0 {{width}} {{height}}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g fill="none">
+    <text id="something" stroke="none" fill="none" font-family="{{fontFamily}}" font-size="12" font-weight="normal" font-size="{{fontSize}}" fill="{{fontColor}}">
+      <tspan x="51.486" y="26">{{text}}</tspan>
+    </text>
+    </g>
+</svg>
