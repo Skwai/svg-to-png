@@ -1,20 +1,20 @@
 const express = require('express')
-const BuildImage = require('./build-image')
+const create = require('./create')
+const convert = require('./convert')
+
 const app = express()
 
 app.get('/', (req, res) => {
   res.set('Content-Type', 'image/png')
 
-  const image = new BuildImage({
-    template: './templates/default.svg',
+  create({
     text: 'example',
     fontColor: '#000',
-    fontFamily: 'Ubuntu',
-    fontSize: 20
+    fontSize: 20,
+    fontFile: 'Museo900-Regular'
   })
-
-  image.convert()
-    .then((output) => output.pipe(res))
+    .then(convert)
+    .then((stdout) => stdout.pipe(res))
 })
 
 app.listen(3030, () => {
