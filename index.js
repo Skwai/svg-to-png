@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   res.set('Content-Type', 'image/png')
 
   create({
-    text: 'example',
+    text: '民得经十三',
     fontColor: '#000',
     fontSize: 20,
     fontFile: 'Museo900-Regular'
