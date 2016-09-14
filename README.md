@@ -13,4 +13,4 @@ $ brew install inkscape
 `$ node index.js`
 
 # 4. View it 
-View `localhost:3030` in your browser
+Open `http://localhost:3030` in your browser
