@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 
   const image = new BuildImage({
     template: './templates/default.svg',
-    text: 'example',
+    text: '民得经十三',
     fontColor: '#000',
     fontFamily: 'Ubuntu',
     fontSize: 20
